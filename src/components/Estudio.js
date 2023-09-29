@@ -11,7 +11,7 @@ function Estudio({estudio , detalle, idEstudio}) {
         <Card.Body className="d-flex flex-column">
           <Card.Title>{estudio}</Card.Title>
           <Card.Text>{detalle}</Card.Text>
-          <Button as={Link} to={`/tusEstudios/${idEstudio}`}variant="success">Ver estudio</Button>
+          <Button as={Link} to={`/tusEstudios/${idEstudio}`}variant="primary">Ver estudio</Button>
         </Card.Body>
       </Card>
   );

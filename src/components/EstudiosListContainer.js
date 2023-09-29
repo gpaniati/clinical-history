@@ -4,7 +4,7 @@ import EstudiosList from "./EstudiosList";
 
 function EstudiosListContainer() {
   return (
-    <div>
+    <div className="pani">
       <EstudiosList  />
     </div>
   );

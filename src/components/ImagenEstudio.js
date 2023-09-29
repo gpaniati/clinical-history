@@ -1,16 +1,36 @@
 import Figure from "react-bootstrap/Figure";
-import cadera from "../images/cadera.jpg";
-import dentista from "../images/dentista.jpg";
-//import sangre from "../images/sangre.jpg";
 import { useParams } from "react-router-dom";
+import "../components/ImagenEstudio.css";
 
 function ImagenEstudio() {
-const { id } = useParams();
+  let imagen;
+  const { id } = useParams();
+  if (id === "cadera") {
+    imagen = "../images/cadera.jpg";
+  } else {
+    if (id === "dentista") {
+      imagen = "../images/dentista.jpg";
+    } else {
+      imagen = "../images/sangre.jpg";
+    }
+  }
+
   return (
+    <div className="imagenEstudio">
+      <Figure>
+        <Figure.Image width={800} height={800} alt="imagen" src={imagen} />
+      </Figure>
+    </div>
+  );
+}
+
+export default ImagenEstudio;
+
+/*return (
     <div>
       {id === "cadera" ? (
           <Figure>
-          <Figure.Image width={800} height={800} alt="imagen" src={cadera} />
+          <Figure.Image width={800} height={800} alt="imagen" src="../images/sangre.jpg" />
         </Figure>
       ) : (
         <Figure>
@@ -18,7 +38,4 @@ const { id } = useParams();
         </Figure>
       )}
     </div>
-  );
-}
-
-export default ImagenEstudio;
+  );*/

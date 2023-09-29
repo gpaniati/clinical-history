@@ -2,18 +2,19 @@
 
 .barraNavegacion{
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    color: red;
+    font-size: 20px;
+    color: blue;
+    background-color: rgb(173, 229, 255);
 }
 
 .links{
-    color: red;
+    color: blue;
     margin-right: 80px;
     font-weight: bold;
 }
 
 .nav-link{
-    color: red!important;
+    color: blue!important;
     margin-right: 20px;
     margin-left: 20px;
 }
