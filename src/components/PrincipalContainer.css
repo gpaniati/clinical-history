@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .principalContainer{
+    background-image: url("https://i0.wp.com/aldiaargentina.microjuris.com/wp-content/uploads/2018/11/medico-3.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  h2 {
+    text-align: center;}
