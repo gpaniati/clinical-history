@@ -6,19 +6,28 @@ function EstudiosList() {
       <Estudio
         key={1}
         estudio={"Ecografia de Cadera"}
-        detalle={"10/05/2022 - Dr Alonso"}
+        fecha={"10/05/2022"}
+        profesional={"Dr. Alonso Juan"}
+        especialidad={"Traumatología"}
+        prestador={"Osde 210"}
         idEstudio={"cadera"}
       />
       <Estudio
         key={2}
-        estudio={"Placa dentista"}
-        detalle={"22/01/2023 - Dr Ragas"}
+        estudio={"Placa panorámica"}
+        fecha={"22/01/2023"}
+        profesional={"Dr. Muños Rodrigo"}
+        especialidad={"Odontología"}
+        prestador={"Osde 210"}
         idEstudio={"dentista"}
       />
       <Estudio
         key={3}
-        estudio={"Analisis de sangre"}
-        detalle={"10/08/2023 - Dr perez"}
+        estudio={"Hemograma"}
+        fecha={"10/11/2023"}
+        profesional={"Dra. Varela María"}
+        especialidad={"Clínica"}
+        prestador={"Osde 210"}
         idEstudio={"sangre"}
       />
     </div>
