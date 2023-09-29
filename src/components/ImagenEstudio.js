@@ -1,6 +1,8 @@
 import Figure from "react-bootstrap/Figure";
 import { useParams } from "react-router-dom";
 import "../components/ImagenEstudio.css";
+import Button from "react-bootstrap/esm/Button";
+import { Link } from "react-router-dom";
 
 function ImagenEstudio() {
   let imagen;
@@ -17,25 +19,14 @@ function ImagenEstudio() {
 
   return (
     <div className="imagenEstudio">
-      <Figure>
-        <Figure.Image width={800} height={800} alt="imagen" src={imagen} />
-      </Figure>
+      <div>
+        <Figure>
+          <Figure.Image width={800} height={800} alt="imagen" src={imagen} />
+        </Figure>
+      </div>
+      <Button className="boton" as={Link} to="/tusEstudios" variant="primary" size="lg">Volver</Button>
     </div>
   );
 }
 
 export default ImagenEstudio;
-
-/*return (
-    <div>
-      {id === "cadera" ? (
-          <Figure>
-          <Figure.Image width={800} height={800} alt="imagen" src="../images/sangre.jpg" />
-        </Figure>
-      ) : (
-        <Figure>
-          <Figure.Image width={800} height={800} alt="imagen" src={dentista} />
-        </Figure>
-      )}
-    </div>
-  );*/
